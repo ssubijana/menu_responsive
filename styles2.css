@@ -1,0 +1,139 @@
+/************************
+  HEADER
+************************/
+
+.page-header{
+  overflow: hidden;
+  background: #444;
+  padding: 1em 0 0 ;
+  height: 4em;
+
+  transition:all .4s linear;
+}
+
+.page-header .center-contents{
+  max-width: 650px;
+  margin:auto;
+  overflow: hidden;
+}
+
+.logo{
+  max-width: 60px;
+  display: block;
+  float: left;
+  margin: 0 0 1em 1em;
+}
+
+.logo img{
+  display: block;
+}
+
+.page-nav{
+  color: #fff;
+  /*position: relative;
+  visibility: inherit;
+  transition:visibility .4s linear;*/
+}
+
+.page-nav ul, .page-nav li{
+  list-style:none;
+  margin:0;
+  padding: 0;
+}
+
+.page-nav a{
+  color: #fff;
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  border-top:#666 1px solid;
+  cursor: pointer;
+
+}
+ 
+.toggle-nav {
+  float: right;
+  padding: 1em;
+  margin: 0 0 1em 1em;
+  color: rgb(255,255,255);
+  cursor: pointer;
+}
+
+
+.menu-expanded {
+  height: 11em;
+}
+
+
+/************************
+  MAIN CONTENTS
+************************/
+
+.page-contents{
+  padding:0 1em;
+  max-width: 650px;
+  margin:auto;
+}
+
+
+/************************
+  MEDIA QUERIES
+************************/
+@media only screen and (min-width:450px){
+  .page-header span{
+    display: block;
+  }
+  
+  .page-nav {
+    clear:left;
+    position: relative;
+    visibility: inherit;
+    transition:visibility .4s linear;
+  }
+
+}
+
+@media only screen and (min-width:700px){
+  .page-header{
+    height: 4em;
+  }
+  
+  .logo{
+    max-width: 92px;
+  }
+  .page-nav{
+    width: auto;
+    float: right;
+    display: block;
+    clear: none;
+    visibility: visible;
+  }
+  .page-header span{
+    display: none;
+  }
+
+  .page-nav ul, .page-nav li{
+    float: left;
+  }
+
+  .page-nav a {
+    border-top: none;
+  }
+
+}
+
+@media only screen and (max-width:699px){
+  .collapse {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width:700px){
+  .collapse {
+    visibility: inherit;
+  }
+}
+
+
